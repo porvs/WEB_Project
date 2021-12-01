@@ -54,6 +54,8 @@ header .icons .fa-search{
 }
 
 .player {
+    position: sticky;
+    top: 0;
     text-align: center;
     background-color: black;
 }
