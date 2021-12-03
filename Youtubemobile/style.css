@@ -25,7 +25,11 @@
 }
 
 body {
-    font-family: Nanum Gothic Coding;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: var(--white-color);
 }
 
 ul {
@@ -143,6 +147,8 @@ body > .info {
     justify-content: space-between;
     border-top: 1px solid var(--grey-light-color);
     border-bottom: 1px solid var(--grey-light-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .info .channel .metadata{
@@ -161,9 +167,16 @@ body > .info {
     border-radius: 50%;
 }
 
-.info .channel .metadata .info .name{
+.channel .metadata .info .name{
+    font-size: var(--font-medium);
+    color: var(--black-color);
+    margin-left: 10px;
+}
+
+.channel .metadata .info .subscribers{
     font-size: var(--font-small);
     color: var(--grey-dark-color);
+    margin-left: 9px;
 }
 
 .info .channel .subscribe{
@@ -200,6 +213,7 @@ body > .info {
 }
 
 .upNext .item .moreBtn{
+    height: 100%;
     flex: 1 1 5%;
 }
 
@@ -218,3 +232,17 @@ body > .info {
     color: var(--grey-dark-color);
 }
 
+.infoAndUpNext{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .infoAndUpNext{
+        display: flex;
+        flex-direction: row;
+        margin: var(--padding) 0;
+        padding: 10px;
+    }
+}
