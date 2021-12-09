@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.mail{
+    margin-right: 15px;
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.image{
+    margin-right: 30px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.menuBtn{
+    font-size: 20px;
+    margin-right: 20px;
+    color: rgba(0,0,0,0.87);
+}
+
+
+.profile{
+    margin-right: 18px;
+    width: 33px;
+    height: 33px;
+    border-radius: 90px;
+}
+
+.mainlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo_g1{
+    font-size: 90px;
+    font-weight: bold;
+    color: #4285f4;
+    margin-right: -3px;
+}
+
+.logo_o1{
+    font-size: 90px;
+    font-weight: bold;
+    color: #ea4335;
+    margin-right: -3px;
+}
+
+.logo_o2{
+    font-size: 90px;
+    font-weight: bold;
+    color: #fbbc05;
+    margin-right: -3px;
+}
+
+.logo_g2{
+    font-size: 90px;
+    font-weight: bold;
+    color: #4285f4;
+    margin-right: -3px;
+}
+
+.logo_l1{
+    font-size: 90px;
+    font-weight: bold;
+    color: #34a853;
+    margin-right: -3px;
+}
+
+.logo_e1{
+    font-size: 90px;
+    font-weight: bold;
+    color: #ea4335;
+    margin-right: -3px;
+}
+
+article {
+    text-align: center;
+}
+
+.inputwithicon{
+    border-radius: 30px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.inputwithicon input[type=search] {
+    border-radius: 35px;
+    width: 550px;
+    height: 48px;
+    padding-left: 55px;
+    font-size: 15px;
+    
+}
+
+.first {
+    font-size: 14px;
+    color: #5f6367;
+    position: relative;
+    left: 40px;
+    top: 1px;
+}
+
+.second {
+    color: #4285f4;
+}
+
+.inputwithicon button {
+    position: relative;
+    right: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icons :hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5{
+    display: flex;
+    padding: 20px;
+    border-radius: 90px;
+    margin: 30px;
+    background-color: rgba(241, 243, 244, 1);
+    color: black;
+}
+
+.icon2{
+    color: #3b5998;
+}
+
+.icon1{
+    color: #c4302b;
+}
+
