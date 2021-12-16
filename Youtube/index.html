@@ -1,73 +1,121 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8f006c6b5b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;500&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>YouTube</title>
 </head>
-
 <body>
+    <!-- header -->
     <header>
-        <div class="menubar">
-            <div class="navicon"><i class="fas fa-bars"></i></div>
-            <div class="logoicon"><a href=""><i class="fab fa-youtube"></i>YouTube</a></div>
-            <div class="searchbar">
-                <input class="search" type="search">
-                <button class="searchbutton"><i class="fas fa-search"></i></button>
-                <button class="microphone"><i class="fas fa-microphone"></i></button>
-            </div>
-            <div class="icons">
-                <button class="icons"><i class="fas fa-video"></i></button>
-                <button class="icons"><i class="fas fa-th"></i></button>
-                <button class="icons"><i class="fas fa-bell"></i></button>
-            </div>
-
-            <div class="profile"><img src="images/image.jpg" alt=""></div>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">YouTube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
         </div>
     </header>
 
-    <div class="main">
-        <div class="mainvideo">
-            <video controls src="video/video.mp4"></video>
-        </div>
-        
-        <div class="subtitlebox">
-            <span class="main_videotitle">
-                [Playlist] 코딩할때 듣기 좋은 노래 | 3 hour playlist | lofi coding beats
+    <!-- video player -->
+    <section class="player">
+        <video controls src="video/video1.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- video info -->
+    <section class="info">
+        <!-- metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#hashtag1</li>
+                <li>#hashtag2</li>
+                <li>#hashtag3</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title clamp">
+                    Clone Coding: YouTube Mobile Website 유튜브 모바일 웹사이트 따라
+                    만들기 Clone Coding: YouTube Mobile Website 유튜브 모바일 웹사이트 따라
+                    만들기  Clone Coding: YouTube Mobile Website
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <span class="views">
+                1M views 1 month ago
             </span>
-
-            <span class="main_subtitle">
-                조회수 297,224회 최초공개:2021.7.5.
-            </span>
         </div>
-
-        <div class="function_Btn">
-            <button class="Btn"><i class="fas fa-thumbs-up"></i></button>
-            <button class="Btn"><i class="fas fa-thumbs-down"></i></button>
-            <button class="Btn"><i class="fas fa-share"></i></button>
-            <button class="Btn"><i class="fas fa-save"></i></button>
-            <button class="Btn"><i class="fas fa-ellipsis-h"></i></button>
+        <!-- actions -->
+        <ul class="actions">
+            <li>
+                <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-share"></i><span>Share</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-plus"></i><span>Save</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-flag"></i><span>Report</span></button>
+            </li>
+        </ul>
+        <!-- channel description -->
+        <div class="channel">
+            <div class="metadata">
+                <img src="images/avatar.jpg" alt="" />
+                <div class="info">
+                    <span class="name">ASCII74</span>
+                    <span class="subscribers">1M subscribers</span>
+                </div>
+            </div>
+            <button class="subscribe">subscribe</button>
         </div>
+    </section>
 
-        <div class="subscribe">
-            <img src="images/lofi.webp" class="createrimg">
-            <span class="creater">Lofi코딩</span>
-            <span class="subscriber">구독자 5.47만명</span>
-            <button class="subscribeBtn">구독중</button>
-            <button class="bell"><i class="far fa-bell"></i></button>
-        </div>
+    <!-- up next -->
+    <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+            <li class="item">
+                <div class="img"><img src="images/image2.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[#유퀴즈온더블럭] GD를 삼킨 이찬혁과 CD를 삼킨 이수현💜 유재석과의 낙하 합동무대를 곁들인 악뮤(AKMU) 남매의 진솔한 이야기 | #Diggle #갓구운클립</span>
+                    <span class="name">tvN D ENT</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="images/image2.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[#유퀴즈온더블럭] GD를 삼킨 이찬혁과 CD를 삼킨 이수현💜 유재석과의 낙하 합동무대를 곁들인 악뮤(AKMU) 남매의 진솔한 이야기 | #Diggle #갓구운클립</span>
+                    <span class="name">tvN D ENT</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="images/image2.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">[#유퀴즈온더블럭] GD를 삼킨 이찬혁과 CD를 삼킨 이수현💜 유재석과의 낙하 합동무대를 곁들인 악뮤(AKMU) 남매의 진솔한 이야기 | #Diggle #갓구운클립</span>
+                    <span class="name">tvN D ENT</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
     </div>
-
-    <aside class="nextvideo">
-
-    </aside>
-
-
+</body>
 </html>
